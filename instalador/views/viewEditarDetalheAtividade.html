@@ -1,0 +1,181 @@
+
+<jsv-content>
+
+            <!-- PAGE CONTENT FIM -->
+            <div class="page-content">
+
+							<div class="titulo-view">
+                <br clear="both">
+                <br clear="both">
+                <div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1 col-sm-12 col-xs-12">
+                      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 data-arrow">
+                          <a href="javascript:void(0)" onclick="voltarDetalheAtividade();">
+                           <img src="images/down-arrow.png" alt="Voltar">
+                         </a>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <h1 style="margin-top: 18px;padding-top: 0px;">Edit Activity</h1>
+                        <br clear="both">
+                      </div>
+                </div>
+							</div>
+
+
+							<!-- COMUNIDADE -->
+              <div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1 col-sm-12 col-xs-12 comunidade comunidade-enviar">
+                 
+                 <br clear="both">
+
+                 <!-- COMBOS SELECTS -->
+                 <div class="row2 combos-select">
+
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                      <!-- ATIVIDADE -->
+                      <div class="form-group">
+                        <label>Atividade / Activity name</label>
+                        <input type="text" name="name_activity" class="form-control" id="enviarName" placeholder="Atividade / Activity name">
+                      </div>
+                      <!-- ATIVIDADE -->
+                       
+                       <!-- CATEGORIA -->
+                       <div class="form-group">
+                         <select class="form-control categoria" id="enviarCategoria">
+                           <option value="">Category</option>
+                           <option value="Any one">Any one</option>
+                           <option value="Activity">Activity</option>
+                           <option value="Game">Game</option>
+                           <option value="Listening">Listening</option>
+                           <option value="Music">Music</option>
+                           <option value="Video">Video</option>
+                         </select>
+                       </div>
+                       <!-- CATEGORIA -->
+
+
+                       <!-- LEVEL -->
+                       <div class="form-group">
+                         <select class="form-control level" id="enviarLevel">
+                           <option value="">Level</option>
+                           <option value="Any one">Any one</option>
+                           <option value="SB 01">SB 01</option>
+                           <option value="AB 01">AB 01</option>
+                           <option value="SB 02">SB 02</option>
+                           <option value="AB 02">AB 02</option>
+                           <option value="SB 03">SB 03</option>
+                           <option value="AB 03">AB 03</option>
+                         </select>
+                       </div>
+                       <!-- LEVEL -->
+
+
+
+                       <!-- UNIT -->
+                       <div class="form-group">
+                         <select class="form-control unit" id="enviarUnit">
+                           <option value="">unit</option>
+                           <option value="Any one">Any one</option>
+                           <option value="01">01</option>
+                           <option value="02">02</option>
+                           <option value="03">03</option>
+                           <option value="04">04</option>
+                           <option value="05">05</option>
+                           <option value="06">06</option>
+                           <option value="07">07</option>
+                           <option value="08">08</option>
+                           <option value="09">09</option>
+                         </select>
+                       </div>
+                       <!-- UNIT -->
+
+
+                       <!-- TOPIC -->
+                       <div class="form-group">
+                         <select class="form-control topic" id="enviarTopic">
+                           <option value="">topic</option>
+                           <option value="Any one">Any one</option>
+                           <option value="Playground">Playground</option>
+                           <option value="Family">Family</option>
+                           <option value="Games">Games</option>
+                           <option value="Routines">Routines</option>
+                           <option value="House">House</option>
+                         </select>
+                       </div>
+                       <!-- TOPIC -->
+
+                 </div>
+
+
+
+
+                 </div>
+                 <!-- COMBOS SELECTS -->
+
+                 <br clear="both">
+
+                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 comunidade-enviar-textarea">
+                  <div class="form-group">
+                    <label>Descrição / Description</label>
+                    <textarea name="descricao" id="enviarDescricao" class="form-control" rows="10"></textarea>
+                  </div>
+                 </div>
+
+                 <br clear="both">
+
+                 <div class="row2 toolbar-enviar-comunidade">
+                   
+                   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 coluna-um">
+                     
+                      <div class="form-group">
+                        <label>Links</label>
+                        <input type="text" name="links[]" class="form-control" placeholder="Não esqueça de colocar o http:// ou https://" id="enviarLinks">
+                        <a href="javascript:void(0)" title="Adicionar mais links" onclick="appendLinks();">
+                          <img src="images/more.png" alt="Adicionar mais links">
+                        </a>
+                      </div>
+                      
+                      <!-- APPEND LINKS -->
+                      <div class="appendLinks">
+                      </div>
+                      <!-- APPEND LINKS -->
+
+                   </div>
+
+                   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 coluna-dois text-right">
+
+
+                     
+                     <a href="javascript:void(0)" title="Upload Files" onclick="ativarUploadFiles();" class="btn btn-primary btn-upload">UPLOAD FILES <i class="fa fa-cloud-upload" aria-hidden="true"></i></a>
+
+                     &nbsp;&nbsp;&nbsp;
+
+                     <a href="javascript:void(0)" title="Submit" onclick="editarAtividadeComunidade();" id="btnEnviarAtividadeComunidade" class="btn btn-primary" style="padding-bottom: 10px;">UPDATE</a>
+
+                     <br clear="both">
+
+                     <div id="appendFilesTemporarios"></div>
+                     
+                     <!--
+                     <p>
+                       <a href="javascript:void(0)" onclick="ativarJsView('1520'); $JSView.goToView('viewDetalheAtividade');">teste do detalhe</a>
+                     </p>
+                      -->
+
+                   </div>
+
+                 </div>
+
+              </div>
+              <!-- COMUNIDADE -->
+
+              <br clear="both">
+              <br clear="both">
+              <br clear="both">
+              <br clear="both">
+              <br clear="both">
+
+
+            </div>
+            <!-- PAGE CONTENT FIM -->
+
+</jsv-content>

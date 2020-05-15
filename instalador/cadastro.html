@@ -1,0 +1,503 @@
+<!--
+#
+# DIOGENES OLIVEIRA DOS SANTOS JUNIOR
+# WWW.DIOGENESJUNIOR.COM.BR
+# CONTATO@DIOGENESJUNIOR.COM.BR
+#
+-->
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<title>Magic Tree</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+<meta name="theme-color" content="#0096cc">
+
+<!-- FAVICON -->
+<link rel="shortcut icon" href="images/logo.png">
+
+<!-- MANIFEST -->
+<link rel="manifest" href="manifest.json?v=3">
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="all" />
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+<link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css">
+<!-- ICONES -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- ANIMATE -->
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+<!-- DROPDOWN -->
+<link href="css/bootstrap-dropdownhover.css" rel="stylesheet">
+
+<!-- MICRON -->
+<link href="css/micron.min.css" type="text/css" rel="stylesheet">
+
+<style type="text/css">
+  @media(max-width: 540px){
+  footer{
+    position: relative !important;
+    bottom: 0px !important;
+    height: 200px !important;
+  }
+}
+
+
+</style>
+
+</head>
+<body>
+
+
+<!-- WORK -->
+<div class="work pagina-00">
+
+ <div class="container tada">
+
+   <div class="row">
+
+       <!-- LOGO -->
+       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 logo-pequeno">
+         <img src="images/logo-grande.png" alt="Magic Tree" class="pop" />
+       </div>
+       <!-- LOGO -->
+
+       <!-- AREA LOGIN E SENHA -->
+       <div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1 col-sm-12 col-xs-12 area-login-senha">
+
+          <div class="caixa-cadastro">
+
+             <h3>Cadastre-se / Sign In<br clear="both"><small><!--x Preencha todos os campos obrigatórios (*)--></small></h3>
+             <br clear="both">  
+             <br clear="both">             
+
+
+             <div class="row">
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                 <div class="form-group">
+                   <label>* Nome completo do aluno / Student Full Name</label>
+                   <input type="text" name="nome" class="form-control" placeholder="" id="cadastroNome" autocomplete="new-campo1">
+                 </div>
+               </div>
+               
+               <!--<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                 <div class="form-group">
+                   <label>* Sobrenome / Last name</label>
+                   <input type="text" name="sobrenome" class="form-control" placeholder="" id="cadastroSobrenome"  autocomplete="new-campo2">
+                 </div>
+               </div>-->
+             </div>
+             <br clear="both">
+
+             <div class="row">
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                 <div class="form-group">
+                   <label>* Nome completo do responsável / Full name of the person in charge</label>
+                   <input type="text" name="nome_responsavel" class="form-control" placeholder="" id="cadastroNomeResponsavel" autocomplete="new-campo2">
+                 </div>
+               </div>
+               
+               <!--<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                 <div class="form-group">
+                   <label>* Sobrenome / Last name</label>
+                   <input type="text" name="sobrenome" class="form-control" placeholder="" id="cadastroSobrenome"  autocomplete="new-campo2">
+                 </div>
+               </div>-->
+             </div>
+             <br clear="both">
+
+             <div class="row">
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                 <div class="form-group">
+                   <label>Telefone / Phone</label>
+                   <input type="text" name="telefone" class="form-control" placeholder="" id="cadastroTelefone"  autocomplete="new-campo3">
+                 </div>
+               </div>
+             </div>
+             <br clear="both">
+
+             <div class="row">
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                 <div class="form-group">
+                   <label>Endereço / Address</label>
+                   <input type="text" name="endereco" class="form-control" placeholder="" id="cadastroEndereco"  autocomplete="new-campo4">
+                 </div>
+               </div>
+             </div>
+             <br clear="both">
+
+             <div class="row">
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                 <div class="form-group">
+                   <label>* Escola / School</label>
+                   <input type="text" name="escola" class="form-control" placeholder="" id="cadastroEscola"  autocomplete="new-campo5">
+                 </div>
+               </div>
+             </div>
+             <br clear="both">
+
+
+             <div class="row">
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                 <div class="form-group">
+                   <label>* E-mail /  Email Address</label>
+                   <input type="text" name="email" class="form-control" placeholder="" id="cadastroEmail"  autocomplete="new-campo6">
+                 </div>
+               </div>
+             </div>
+             <br clear="both">
+
+             <div class="row">
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                 <div class="form-group">
+                   <label>* Senha / Password</label>
+                   <input type="password" name="senha" class="form-control" placeholder="" id="cadastroSenha"  autocomplete="new-campo7">
+                 </div>
+               </div>
+             </div>
+             <br clear="both">
+
+             <div class="row">
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                 <div class="form-group">
+                   <label>* Confirmar Senha / Confirm Password</label>
+                   <input type="password" name="confirmar-senha" class="form-control" placeholder="" id="cadastroConfirmarSenha"  autocomplete="new-campo8">
+                 </div>
+               </div>
+             </div>
+             <br clear="both">
+
+
+             <div class="row text-center">
+
+                 <form>
+                     <div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1 col-sm-12 col-xs-12">
+                       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                          <p class="the-check">
+                              <input type="radio" value="professor" name="tipo_perfil" id="souProfessor" />
+                              <label for="souProfessor">&nbsp;&nbsp;&nbsp;Sou professor / I'm teacher</label>
+                          </p>
+                       </div>
+                       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                          <p class="the-check">
+                              <input type="radio" value="aluno" name="tipo_perfil" id="souAluno" checked />
+                              <label for="souAluno">&nbsp;&nbsp;&nbsp;Sou aluno / I'm student</label>
+                          </p>
+                       </div>
+                     </div>
+                 </form>
+             
+             </div>
+             
+             <br clear="both">
+
+
+             <div class="row">
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                 
+                    <p class="the-check">
+                        <input type="checkbox" id="aceitoTermosDeUso" checked />
+                        <label for="aceitoTermosDeUso">Eu aceito os <a href="javascript:void(0)" onclick="$('.termos-de-uso').fadeIn(500);" title="Clique para ver os termos de Uso da plataforma MagicTree">termos de uso</a></label>
+                    </p>
+
+               </div>
+             </div>
+             <br clear="both">
+
+             <div class="row">
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                  <button type="button" class="btn btn-primary btn-lg" id="btnCadastrar" onclick="procCadastro();" style="padding-bottom: 14px">Ok</button>
+               </div>
+             </div>
+             <br clear="both">
+                 
+
+             <p>
+               <a href="index.html" title="voltar" style="font-family: 'granstander_cleanregular' !important;">voltar</a>
+             </p>
+
+          </div>
+
+          
+
+       </div>
+       <!-- AREA LOGIN E SENHA -->
+
+   </div>
+
+ </div>
+
+</div>
+<!-- WORK -->
+
+<!-- RODAPE -->
+<footer>
+
+
+    <div class="footer-bottom">
+       <div class="container">
+         <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+             <p>Editora Baltimore - Todos os direitos reservados</p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-right">
+             <p>atendimento@baltimoreeducation.com.br</p>
+          </div>
+         </div>
+       </div>
+    </div>
+
+</footer>
+<!-- RODAPE -->
+
+<!-- AUDIOS -->
+<audio id="sound1" src="sounds/ta-da.mp3" type="audio/mp3"></audio>
+<!-- AUDIOS -->
+
+<!--  CARREGANDO -->
+<div class="carregando">
+
+<div class="loader loader--style2" title="1"> <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"> <path fill="#000" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z"> <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"/> </path> </svg> </div><p style="text-align: center;">processando</p>
+
+</div>
+<!--  CARREGANDO -->
+
+<!-- AJUSTE A ORIENTAÇÃO DO SEU DEVICE -->
+<div class="ajuste-orientacao-tablet">
+  <div class="animated infinite pulse delay-2s" style="animation-iteration-count: infinite !important;">
+      <div class='titanic titanic-rotate-phone'></div>
+      <p>Ajuste a orientação do<br>seu dispositivo</p>
+  </div>
+</div>
+<!-- AJUSTE A ORIENTAÇÃO DO SEU DEVICE -->
+
+
+<!-- ALERTAS -->
+<div class="alertas-usuarios">
+
+   <div class="janela">
+     <h3></h3>
+     <p>
+       <a href="javascript:void(0)" onclick="$('.alertas-usuarios').fadeOut(500);" class="btn btn-primary">Ok, entendi</a>
+     </p>
+   </div>
+
+</div>
+<!-- ALERTAS -->
+
+
+<!-- TERMOS DE USO -->
+<div class="termos-de-uso">
+
+   <div class="janela">
+     
+     <!-- FECHAR OS TERMOS DE USO AO CLICAR -->
+     <div class="close-termos" style="position: absolute;display: block;top: 10px;right: 10px;font-size: 1.4em;cursor: pointer;z-index: 9999;" onclick="$('.termos-de-uso').fadeOut(500);">
+       <i class="fa fa-times-circle" aria-hidden="true"></i>
+     </div>
+     <!-- FECHAR OS TERMOS DE USO AO CLICAR -->
+
+     <h3>Termos e Condições de Uso de Recursos Didáticos da Editora Baltimore</h3>
+     <br clear="both">
+     
+     <p><b>1. Aceitação dos Termos e Condições de Uso de Recursos Didáticos da Editora Baltimore</b></p>
+          
+
+     <p>A Editora Baltimore comercializa conteúdos educacionais através de livros, vídeos, músicas, jogos, imagens, fotos, desenhos, ilustrações, gravações de áudio, aplicativos, site e outros recursos (doravante denominados Recursos Didáticos);</p>
+
+     <p>O uso dos Recursos Didáticos tais como aqueles do site, os aplicativos e quaisquer outros recursos de propriedade da Editora Baltimore (doravante denominada Baltimore), está condicionado à aceitação e ao cumprimento dos Termos e Condições de Uso descritos abaixo. Para fazer uso dos Recursos Didáticos é preciso:</p>
+
+     <p>
+       (a) ler atentamente os termos descritos abaixo;<br clear="both">
+       (b) concordar expressamente com eles;<br clear="both">
+       (c) se cadastrar fornecendo um endereço de email válido para ter acesso aos Recursos Didáticos.
+     </p>
+
+     <p>Ao fazer uso dos Recursos Didáticos oferecidos pela Baltimore, você (a partir de agora denominado Usuário) concorda que leu, entendeu e aceitou os termos, regras e condições aqui dispostos.</p>
+
+     <p><b>2. Os Termos Gerais e Condições de Uso</b></p>
+
+     <p>O Recursos Didáticos estão disponíveis para aqueles com capacidade civil para utilizá-la. Caso o Usuário não possua capacidade para contratar ou utilizar os Recursos Didáticos, quando for mencionado Usuário neste Termo será então entendido também que as declarações tenham sido prestadas por seu responsável legal.</p>
+
+     <p>À Baltimore se reserva o direito de modificar a qualquer momento a apresentação, configuração e disponibilização dos Recursos Didáticos, respeitando-se a validade do acesso contratado. Exceto em atualizações para melhoria do serviço ou por motivos de segurança. O mesmo se aplica a estes Termos e Condições de Uso, estabelecidos como condição fundamental para a utilização do serviço.</p>
+
+     <p><b>3. Cadastro</b></p>
+
+     <p>O Usuário declara e se responsabiliza pela veracidade de todos os dados por ele fornecidos ao através do site ou aplicativos no momento de seu Cadastro e em qualquer atualização posterior, ficando responsável, portanto, pela sua exatidão e autenticidade.</p>
+
+     <p>É dever do Usuário manter seus dados atualizados para a devida utilização dos Recursos Didáticos.</p>
+
+     <p>Somente será permitido um único Cadastro por Usuário, sendo necessário para sua efetivação o preenchimento de todos os campos exigidos no respectivo formulário.</p>
+     
+     <p>No momento do Cadastro, o Usuário deverá escolher um nome de usuário e senha (login), pessoal e intransferível, por meio dos quais ele terá acesso aos Recursos Didáticos, bem como um endereço de e-mail válido para contato, comprometendo-se a não informá-los a terceiros, responsabilizando-se exclusiva e pessoalmente pelo seu uso.</p>
+
+     <p>Ao concluir o Cadastro, o Usuário receberá uma mensagem da Baltimore em seu e-mail cadastrado, para validação. Bastará que o Usuário clique na URL para validar e ativar seu Cadastro.</p>
+
+     <p>O Usuário não pode utilizar palavras deselegantes ou ofensivas para criar seu login, bem como a utilização de marcas de terceiros, nomes de entidades e organizações, nomes protegidos por direitos autorais ou que violem quaisquer direitos de terceiros, sob pena de serem cancelados pela Baltimore, ao seu livre e exclusivo critério.</p>
+
+     <p>A Baltimore se reserva o direito de, a qualquer tempo, ao seu livre e exclusivo critério e sem aviso prévio:</p>
+
+     <p>(i) conferir os dados informados pelo Usuário nos Cadastros dos Recursos Didáticos, podendo solicitar dados e/ou documentos adicionais</p>
+
+     <p>(ii) cancelar ou excluir os Cadastros de Usuários que estejam inativos há mais de 90 (noventa) dias. Para tanto, a Baltimore encaminhará um e-mail ao Usuário, para o endereço que este informou em seu Cadastro e, caso não haja nenhuma resposta ou atividade dentro de, até, 30 (trinta) dias contados do envio de tal e-mail, a Baltimore procederá ao cancelamento do Cadastro e exclusão do Usuário do banco de dados.</p>
+
+     <p>O Usuário se compromete a comunicar imediatamente à Baltimore a eventual perda ou roubo de sua senha de acesso, assim como qualquer risco de acesso a ela por terceiros.</p>
+
+     <p>É recomendável ao Usuário trocar de senha periodicamente, o que pode ser feito acessando-se as páginas do cadastro no site ou no aplicativo dos Recursos Didáticos.</p>
+
+     <p><b>4. Chaves de Acesso</b></p>
+     <p>As chaves de acesso possuem níveis hierárquicos tais como: acesso de aluno, professor, instituição ou administração em diferentes graus, podendo variar em seu conteúdo, nível ou módulo, e prazos de validade.</p>
+
+     <p><b>5. Valores</b></p>
+     <p>Os Recursos Didáticos oferecidos ao Usuário não incluem valores referentes à utilização dos serviços necessários ao acesso à Internet, entre outros, que são de responsabilidade exclusiva do Usuário. As chaves possuem licença limitada e a liberação do acesso está relacionada à compra da licença e ao seu prazo de validade.</p>
+
+     <p><b>6. Utilização dos Recursos Didáticos</b></p>
+     <p>O Usuário reconhece que é responsável por quaisquer informações falsas que possam ser prestadas para a utilização dos Recursos Didáticos. O Usuário isenta a Baltimore de qualquer responsabilidade quanto à veracidade dos dados pessoais fornecidos por ele quando do uso dos Recursos Didáticos.</p>
+
+     <p>O usuário reconhece, ainda, que estes Termos e Condições de Uso do Recursos Didáticos oferecidos pela Baltimore devem ser observados e fielmente cumpridos, sob pena de cancelamento de bloqueio de utilização dos Recursos Didáticos e demais medidas cabíveis, caso os mencionados Termos forem violados ou descumpridos.</p>
+
+     <p><b>7. Registro e dados pessoais</b></p>
+     <p>É dever do Usuário manter atualizados os dados pessoais fornecidos quando da utilização do Recursos Didáticos.</p>
+
+     <p>A Baltimore pode cancelar qualquer registro do Usuário, a qualquer momento e sem prévio aviso, assim que tiver conhecimento, e a seu exclusivo critério, se o Usuário descumprir, intencionalmente ou não, estes Termos e Condições de Uso, ou violar leis e regulamentos federais, estaduais e/ou municipais, ou violar os princípios legais, a moral e os bons costumes.</p>
+
+     <p>À Baltimore cabe o direito de não renovar ou aceitar novos registros de Usuários que tiverem seus registros cancelados por motivos que infringirem este termo.</p>
+
+     <p><b>8. Regras de conduta do Usuário</b></p>
+
+     <p>O Usuário não tem autorização para reproduzir, copiar ou duplicar totalmente ou parcialmente qualquer conteúdo de propriedade da Baltimore nem utilizar os Recursos Didáticos para a publicação, criação, armazenamento e/ou divulgação de:</p>
+
+     <p>a) Conteúdo abusivo, como textos, fotos e/ou vídeos que tenham caráter difamatório, discriminatório, obsceno, ofensivo, ameaçador, abusivo, vexatório, prejudicial, que contenha expressões de ódio contra pessoas ou grupos, ou que contenha pornografia infantil, pornografia explícita ou violenta, conteúdo que possa ser danoso a menores, que contenha insultos ou ameaças religiosas ou raciais, ou que incentive danos morais (incluindo os corporais) e patrimoniais, ou que possa violar qualquer direito de terceiro, notadamente os direitos humanos.</p>
+
+     <p>b) Banners publicitários e/ou qualquer tipo de comércio eletrônico que seja considerado ilícito, assim entendidos os que sejam contrários à legislação ou ofendam direitos de terceiros.</p>
+
+     <p>c) Qualquer tipo de material (textos, fotos e/ou vídeos) protegido por direitos autorais, copyright ou que, por qualquer razão, violem direitos de terceiros.</p>
+
+     <p>d) Informações difamatórias e caluniosas ou que sejam contrárias à honra, à intimidade pessoal e familiar ou à imagem das pessoas (inclusive de pessoa jurídicas, entidades e organizações e ela equiparadas).</p>
+
+     <p>e) Material que incite à violência e à criminalidade, bem como à pirataria de produtos.</p>
+
+     <p>f) Conteúdo que provoque, por suas características (como extensões e formatos de arquivos) danos ao sistema da Baltimore.</p>
+
+     <p>g) O Usuário concorda que, ao usar os Recursos Didáticos, não irá:</p>
+
+     <p>I) violar qualquer um destes Termos e Condições de Uso;</p>
+
+     <p>II) praticar falsidade, assim entendidas a falsidade de informações (i.e: divulgação proposital e voluntária de informações que o Usuário saiba ser falsa ou que sejam notoriamente falsas) e a falsidade ideológica;</p>
+
+     <p>III) publicar ou transmitir qualquer conteúdo abusivo ou ofensivo nos comentários;</p>
+
+     <p>IV) replicar ou armazenar conteúdo abusivo nos servidores da Baltimore;</p>
+
+     <p>V) fazer qualquer coisa ou praticar qualquer ato contrário à boa-fé e aos usos e costumes das comunidades virtuais e que possam ofender qualquer direito de terceiros. Por violação aos usos e costumes de comunidades virtuais também deve ser entendido o uso excessivo de texto em letras maiúsculas, uso de críticas ofensivas (conhecidas como “flamming”), a inclusão desnecessária e imprudente de comunicações anteriores em qualquer publicação ou transmissão, bem como qualquer outro ato que esteja em desacordo com a etiqueta da Internet comumente aceita.</p>
+
+     <p>VI) cometer fraude;</p>
+
+     <p>VII) violar ou infringir direitos de propriedade intelectual, direitos fiduciários ou contratuais, direitos de privacidade ou publicidade de outros;</p>
+
+      <p>VIII) propagar, distribuir ou transmitir códigos destrutivos, quer tenham ou não causado danos reais;</p>
+
+      <p>IX) reunir dados pessoais ou comerciais, incluindo (mas não se limitando a) endereços de e-mail e/ou nomes de qualquer recurso da Internet, seja gerenciado pela Baltimore ou por terceiros, para fins comerciais, políticos, de benemerência ou outros, sem o consentimento dos proprietários desses dados;</p>
+
+      <p>X) reproduzir, replicar, copiar, alterar, modificar, criar obras derivativas a partir de, vender ou revender qualquer um dos serviços da Baltimore ou qualquer parte deles, incluindo websites e páginas web, ou as informações ou dados contidos nos serviços da Baltimore;</p>
+
+      <p>XI) usar robôs, “spiders” ou qualquer outro dispositivo, automático ou manual, para monitorar ou copiar qualquer conteúdo do serviço da Baltimore;</p>
+
+      <p>XII) transmitir conteúdo que não pertence ao Usuário ou que ele não tenha direito de publicar ou distribuir, seja sob lei ou contrato;</p>
+
+      <p>XIII) acessar os Recursos Didáticos sem autorização, por meio de práticas de “hacking”, “password mining” ou qualquer outro meio fraudulento ou que represente violação a direito de terceiros;</p>
+
+      <p>XIX) realizar ou incentivar atividades ilegais, incluindo (mas não se limitando a) promover ou facilitar o acesso, uso ou venda de substâncias ou dispositivos perigosos;</p>
+
+      <p>XX) deixar de cumprir com quaisquer leis, normas, regras, princípios e regulamentações aplicáveis;</p>
+
+      <p>XXI) ajudar qualquer terceiro a realizar qualquer uma das ações vedadas por estes Termos e Condições de Uso.</p>
+      
+      <p><b>9. Direitos de Propriedade Intelectual</b></p>
+
+      <p>A Baltimore respeita os direitos de propriedade intelectual de terceiros e requer que os Usuários façam o mesmo.</p>
+
+      <p>Ao enviar qualquer conteúdo ou informação para os Recursos Didáticos, incluindo textos, tais como comentários, fóruns de discussão, comunidades, enquetes, testes, seção de dúvidas, participação em concurso cultural, fotografias, ilustrações, vídeos, arquivos de áudio e outros materiais, o Usuário declara autorizar, de forma gratuita, não exclusiva, perpétua, global e livre de royalty, o uso do material pela Baltimore e suas empresas afiliadas e parceiras, por qualquer modalidade e suporte, para publicação, reprodução, transmissão, retransmissão, distribuição, comunicação ao público, edição, adaptação e outras transformações, tradução para qualquer idioma, inclusão em quaisquer outras obras, representação, execução, uso por radiodifusão e outros meios de comunicação, mediante o emprego de qualquer tecnologia, exposição, inclusão em base de dados e quaisquer outras modalidades de utilização existentes ou que venham a ser inventadas no futuro, em quaisquer suportes existentes ou que venham a ser inventados no futuro, autorizando também a criação de obras derivadas e o sublicenciamento do material para uso em outras plataformas de comunicação da Baltimore, sem limite de tempo e território.</p>
+
+      <p>Qualquer eventual omissão não implicará limitação de uso do material pela Baltimore. Se o Usuário não concorda em autorizar a Baltimore a utilizar sua contribuição conforme acima, o Usuário então não deverá submeter qualquer material para os Recursos Didáticos.</p>
+
+      <p>Todos os direitos autorais patrimoniais sobre o material submetido pelo Usuário continua sendo de sua propriedade e seu nome será citado sempre que o material for utilizado pela Baltimore, conforme informado pelo Usuário, exceto se o espaço ou suporte físico em que for figurar não possibilitar essa citação. A Baltimore não está obrigada a utilizar os materiais enviados pelo Usuário e está autorizada a editar e monitorar os comentários enviados pelo Usuário.</p>
+
+      <p>O Usuário reconhece e declara que em qualquer contribuição submetida para os Recursos Didáticos, o material correspondente é de sua exclusiva criação, não constituindo violação de direitos autorais, marcas, segredos, direitos de personalidade, incluindo honra, intimidade, vida privada e a imagem das pessoas, direitos patrimoniais e quaisquer outros direitos de terceiros e que possui poderes para autorizar o uso do material pela Baltimore conforme acima.</p>
+
+      <p>Ainda que citada a fonte (inclusive o nome do autor, quando possível e aplicável) e dentro das condições e limites previstos em lei, notadamente a Lei de Direitos Autorais (Lei n.º 9.610/98), o Usuário não pode reproduzir, publicar, apresentar, alugar, oferecer ou expor qualquer cópia de qualquer conteúdo pertencente à Baltimore sem o consentimento da Baltimore ou, no caso de conteúdo de autoria de terceiros, sem o consentimento do autor ou autora.</p>
+
+      <p>O Usuário se compromete a cumprir todas as leis nacionais e internacionais referentes aos Direitos de Propriedade Intelectual.</p>
+
+      <p><b>10. Denúncia de abusos e violação</b></p>
+
+      <p>O Usuário se compromete a denunciar quaisquer abusos ou violação destes Termos e Condições de Uso ou de quaisquer direitos de terceiros que observar e/ou for vítima quando da utilização dos Recursos Didáticos. O Usuário deve utilizar os canais de comunicação disponibilizados através dos Recursos Didáticos para comunicação direta com a Baltimore.</p>
+
+      <p>Todo conteúdo que o Usuário publica utilizando qualquer fórum de discussão ou comunidade de usuários é uma informação que, por sua natureza e característica, é pública, aberta e não confidencial. Ao revelar dados pessoais, tais como seu nome e endereço de e-mail nos comentários, o Usuário aceita e compreende que essa informação pode ser coletada e usada por outras pessoas para se comunicarem com ele, sem que seja imputável qualquer responsabilidade à Baltimore. Desta forma, a Baltimore recomenda que o Usuário seja, portanto, cuidadoso ao decidir compartilhar qualquer dado pessoal em qualquer website.</p>
+
+      <p><b>11. Responsabilidades</b></p>
+      <p>A Baltimore não se responsabiliza por quaisquer danos sofridos pelo Usuário ou terceiros que, de qualquer modo, tenha origem ou dependência relacionada aos Recursos Didáticos.</p>
+      <p>A Baltimore se exime de quaisquer responsabilidades sobre prejuízos resultantes de qualquer interrupção ou erro nos Recursos Didáticos virtuais da Baltimore, incluindo a impossibilidade de acessar o Site e/ou os websites relacionados a ele decorrentes de serviços oferecidos por terceiros. Compromete-se entretanto, a restaurar no prazo máximo de 30 dias do ocorrido.</p>
+
+      <p><b>12. Privacidade de dados</b></p>
+      <p>A Baltimore preserva a privacidade dos dados dos Usuários, e se compromete a revelar os dados pessoais do Usuário apenas devido a um dos seguintes motivos:</p>
+      
+      <p> 
+      a)  por lei <br clear="both">
+      b)  O por meio de uma ordem ou intimação de um órgão, autoridade ou tribunal com poderes para tanto e de jurisdição competente; <br clear="both">
+      c)  para garantir a segurança dos sistemas, resguardar direitos e prevenir responsabilidades da Baltimore.
+      </p>
+
+      <p><b>13. Legislação aplicável</b></p>
+      <p>Estes Termos e Condições de Uso são governados e interpretados segundo as leis da República Federativa do Brasil e todas as disputas, ações e outros assuntos relacionados serão determinados de acordo com essa legislação.</p>
+      
+    <br clear="both">
+     <p style="text-align: center !important;">
+       <a href="javascript:void(0)" onclick="$('.termos-de-uso').fadeOut(500);" class="btn btn-primary">Li e Concordo com os Termos</a>
+     </p>
+
+
+
+   </div>
+
+</div>
+<!-- TERMOS DE USO -->
+
+
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/sweetalert2.min.js"></script>
+    <script src="js/micron.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script>
+         new WOW().init();
+
+         micron.getEle(".pop").interaction("pop").duration(".55").timing("ease-out");
+    </script>
+
+    <script src="js/dist/jquery.inputmask.bundle.js"></script>
+    <script src="js/dist/inputmask/phone-codes/phone.js"></script>
+    <script type="text/javascript">
+      $("#cadastroTelefone").inputmask("(99) 99999-9999");
+    </script>
+
+    <!-- ICONES ANIMADOS -->
+    <script src="https://cdn.rawgit.com/icons8/titanic/master/dist/js/titanic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.5.9/bodymovin.min.js"></script>
+
+    <script type="text/javascript">
+      var titanic = new Titanic({
+          hover: true, // auto animated on hover (default true)
+          click: true  // auto animated on click/tap (default false)
+        });
+    </script>
+
+    <!-- DROPDOWN HOVER -->
+    <script src="js/bootstrap-dropdownhover.js"></script>
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</body>
+</html>

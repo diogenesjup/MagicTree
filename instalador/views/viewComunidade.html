@@ -1,0 +1,166 @@
+
+<jsv-content>
+
+            <!-- PAGE CONTENT FIM -->
+            <div class="page-content">
+
+							<div class="titulo-view">
+                <h1>Community</h1>
+                <br clear="both">
+							</div>
+
+
+							<!-- COMUNIDADE -->
+              <div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1 col-sm-12 col-xs-12 comunidade">
+                 
+                 <!-- BARRA DE FERRAMENTAS -->
+                 <div class="row2">
+                   
+                   <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                     <a href="javascript:void(0)" title="Submit Activity" class="btn btn-primary" onclick="ativarJsView('1020'); $JSView.goToView('viewEnviarComunidade');" style="padding-bottom: 10px">Submit activity</a>
+                   </div>
+
+                   <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                      
+                      <div class="input-group">
+                        <input type="text" class="form-control" id="comunidadePesquisa" placeholder="Search..." onkeyup="filtroTabela();">
+                        <span class="input-group-btn">
+                          <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                        </span>
+                      </div><!-- /input-group -->
+
+                   </div>
+
+                 </div>
+                 <!-- BARRA DE FERRAMENTAS -->
+
+                 <br clear="both">
+                 <br clear="both">
+
+                 <!-- COMBOS SELECTS -->
+                 <div class="row2 combos-select">
+
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                       
+                       <!-- CATEGORIA -->
+                       <div class="form-group">
+                         <select class="form-control categoria" onchange="pesquisaOuFiltroAtividades(this.value,'categoria')">
+                           <option value="todos">Category</option>
+                           <option value="todos">Any one</option>
+                           <option value="Activity">Activity</option>
+                           <option value="Game">Game</option>
+                           <option value="Listening">Listening</option>
+                           <option value="Music">Music</option>
+                           <option value="Video">Video</option>
+                         </select>
+                       </div>
+                       <!-- CATEGORIA -->
+
+
+                       <!-- LEVEL -->
+                       <div class="form-group">
+                         <select class="form-control level" onchange="pesquisaOuFiltroAtividades(this.value,'nivel')">
+                           <option value="todos">Level</option>
+                           <option value="todos">Any one</option>
+                           <option value="SB 01">SB 01</option>
+                           <option value="AB 01">AB 01</option>
+                           <option value="SB 02">SB 02</option>
+                           <option value="AB 02">AB 02</option>
+                           <option value="SB 03">SB 03</option>
+                           <option value="AB 03">AB 03</option>
+                         </select>
+                       </div>
+                       <!-- LEVEL -->
+
+
+
+                       <!-- UNIT -->
+                       <div class="form-group">
+                         <select class="form-control unit" onchange="pesquisaOuFiltroAtividades(this.value,'unidade')">
+                           <option value="todos">unit</option>
+                           <option value="todos">Any one</option>
+                           <option value="01">01</option>
+                           <option value="02">02</option>
+                           <option value="03">03</option>
+                           <option value="04">04</option>
+                           <option value="05">05</option>
+                           <option value="06">06</option>
+                           <option value="07">07</option>
+                           <option value="08">08</option>
+                           <option value="09">09</option>
+                         </select>
+                       </div>
+                       <!-- UNIT -->
+
+
+                       <!-- TOPIC -->
+                       <div class="form-group">
+                         <select class="form-control topic" onchange="pesquisaOuFiltroAtividades(this.value,'topico')">
+                           <option value="todos">topic</option>
+                           <option value="todos">Any one</option>
+                           <option value="Playground">Playground</option>
+                           <option value="Family">Family</option>
+                           <option value="Games">Games</option>
+                           <option value="Routines">Routines</option>
+                           <option value="House">House</option>
+                         </select>
+                       </div>
+                       <!-- TOPIC -->
+
+
+                       <!-- TEACHER -->
+                       <div class="form-group">
+                         <select class="form-control teacher" id="listaProfessoresFiltro" onchange="pesquisaOuFiltroAtividades(this.value,'teacher')">
+                           <option value="todos">teacher</option>
+                           <option value="todos">Any one</option>
+                         </select>
+                       </div>
+                       <!-- TEACHER -->
+
+                 </div>
+
+                 </div>
+                 <!-- COMBOS SELECTS -->
+
+                 <br clear="both">
+                 <br clear="both">
+
+                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                  <div class="table-responsive">
+
+                     <table class="table table-hover">
+
+                      <thead>
+                        <th style="width: 140px;">Name</th>
+                        <th>topic</th>
+                        <th>category</th>
+                        <th>level</th>
+                        <th>unit</th>
+                        <th>teacher</th>
+                        <th>rating</th>
+                        <th style="text-align: center;">Favorites</th>
+                      </thead>
+                      
+                      <tbody id="atividadesGeraisComunidade"></tbody> 
+
+                     </table>
+                  </div>
+                     <br clear="both">
+
+                 </div>
+
+              </div>
+              <!-- COMUNIDADE -->
+
+              <br clear="both">
+              <br clear="both">
+              <br clear="both">
+              <br clear="both">
+              <br clear="both">
+
+
+            </div>
+            <!-- PAGE CONTENT FIM -->
+
+</jsv-content>

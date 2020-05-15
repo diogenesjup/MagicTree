@@ -1,0 +1,221 @@
+<!--
+#
+# DIOGENES OLIVEIRA DOS SANTOS JUNIOR
+# WWW.DIOGENESJUNIOR.COM.BR
+# CONTATO@DIOGENESJUNIOR.COM.BR
+#
+-->
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<title>Magic Tree</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+<meta name="theme-color" content="#0096cc">
+
+<!-- FAVICON -->
+<link rel="shortcut icon" href="images/logo.png">
+
+<!-- MANIFEST -->
+<link rel="manifest" href="manifest.json?v=3">
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="all" />
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+<link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css">
+<!-- ICONES -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- ANIMATE -->
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+<!-- DROPDOWN -->
+<link href="css/bootstrap-dropdownhover.css" rel="stylesheet">
+
+<!-- MICRON -->
+<link href="css/micron.min.css" type="text/css" rel="stylesheet">
+
+<style type="text/css">
+  @media(max-width: 540px){
+  footer{
+    position: relative !important;
+    bottom: 0px !important;
+    height: 200px !important;
+  }
+}
+
+</style>
+
+
+</head>
+<body>
+
+
+<!-- WORK -->
+<div class="work pagina-00">
+
+ <div class="container tada">
+
+   <div class="row">
+
+       <!-- LOGO -->
+       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 logo-pequeno">
+         <img src="images/logo-grande.png" alt="Magic Tree" class="pop" />
+       </div>
+       <!-- LOGO -->
+
+       <!-- AREA LOGIN E SENHA -->
+       <div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1 col-sm-12 col-xs-12 area-login-senha">
+
+          <div class="caixa-cadastro">
+
+             <h3>Chave de acesso / Access Key<br clear="both">
+                 
+                 <small>
+                 
+                   Por favor inserir chave de acesso ao conteúdo <span data-toggle="tooltip" data-placement="top" title="A chave de 15 digitos está localizado na contra capa do livro">(onde eu consigo isso?)</span><br clear="both">
+
+                   Please inser contents access code <span data-toggle="tooltip" data-placement="top" title="The access key is located on the back cover of the book">(where do i get that?)</span>
+                 
+                 </small>
+
+                 </small></h3>
+             <br clear="both">  
+             <br clear="both">             
+
+
+             <div class="row">
+               
+               <div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1 col-sm-12 col-xs-12" style="text-align: center !important;">
+                 <div class="form-group">
+                   <input type="text" name="serial" class="form-control" placeholder="Insira a chave de acesso aqui / Enter the access key here" id="codigoSerial" autocomplete="new-campo1" style="text-transform: uppercase !important;text-align: center;">
+                 </div>
+                 <div class="form-group" style="text-align: right !important;font-family: 'granstander_cleanregular' !important;">
+                   <a href="https://altidiomas.com/contato-altidiomas/" title="Ajuda / Help" target="_blank">Ajuda / Help</a>
+                 </div>
+               </div>
+               
+             </div>
+             <br clear="both">
+
+             
+             <div class="row">
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                  <button type="button" class="btn btn-primary btn-lg" id="btnSerial" onclick="procSerial();" style="padding-bottom: 14px">Ok</button>
+                  <h3 id="retornoSerial"><small></small></h3>
+               </div>
+             </div>
+             <br clear="both">                 
+
+             <!--<p>
+               <a href="index.html" title="voltar" style="font-family: 'granstander_cleanregular' !important;">voltar</a>
+             </p>-->
+
+          </div>          
+
+       </div>
+       <!-- AREA LOGIN E SENHA -->
+
+   </div>
+
+ </div>
+
+</div>
+<!-- WORK -->
+
+<!-- RODAPE -->
+<footer>
+
+
+    <div class="footer-bottom">
+       <div class="container">
+         <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+             <p>Editora Baltimore - Todos os direitos reservados</p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-right">
+             <p>atendimento@baltimoreeducation.com.br</p>
+          </div>
+         </div>
+       </div>
+    </div>
+
+</footer>
+<!-- RODAPE -->
+
+<!-- AUDIOS -->
+<audio id="sound1" src="sounds/ta-da.mp3" type="audio/mp3"></audio>
+<!-- AUDIOS -->
+
+<!--  CARREGANDO -->
+<div class="carregando">
+
+<div class="loader loader--style2" title="1"> <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"> <path fill="#000" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z"> <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"/> </path> </svg> </div><p style="text-align: center;">processando</p>
+
+</div>
+<!--  CARREGANDO -->
+
+<!-- AJUSTE A ORIENTAÇÃO DO SEU DEVICE -->
+<div class="ajuste-orientacao-tablet">
+  <div class="animated infinite pulse delay-2s" style="animation-iteration-count: infinite !important;">
+      <div class='titanic titanic-rotate-phone'></div>
+      <p>Ajuste a orientação do<br>seu dispositivo</p>
+  </div>
+</div>
+<!-- AJUSTE A ORIENTAÇÃO DO SEU DEVICE -->
+
+
+<!-- ALERTAS -->
+<div class="alertas-usuarios">
+
+   <div class="janela">
+     <h3></h3>
+     <p>
+       <a href="javascript:void(0)" onclick="$('.alertas-usuarios').fadeOut(500);" class="btn btn-primary">Ok, entendi</a>
+     </p>
+   </div>
+
+</div>
+<!-- ALERTAS -->
+
+
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/sweetalert2.min.js"></script>
+    <script src="js/micron.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script>
+         new WOW().init();
+
+         micron.getEle(".pop").interaction("pop").duration(".55").timing("ease-out");
+
+         $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+    </script>
+
+    <script src="js/dist/jquery.inputmask.bundle.js"></script>
+    <script src="js/dist/inputmask/phone-codes/phone.js"></script>
+    <script type="text/javascript">
+      $("#cadastroTelefone").inputmask("(99) 9999-9999");
+      $("#codigoSerial").inputmask("**-****-***-******");
+    </script>
+
+    <!-- ICONES ANIMADOS -->
+    <script src="https://cdn.rawgit.com/icons8/titanic/master/dist/js/titanic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.5.9/bodymovin.min.js"></script>
+
+    <script type="text/javascript">
+      var titanic = new Titanic({
+          hover: true, // auto animated on hover (default true)
+          click: true  // auto animated on click/tap (default false)
+        });
+    </script>
+
+    <!-- DROPDOWN HOVER -->
+    <script src="js/bootstrap-dropdownhover.js"></script>
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</body>
+</html>

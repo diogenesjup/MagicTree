@@ -1,0 +1,550 @@
+<!--
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMms:.` `-omMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMNo``./oo+-``yMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMM/ :dMMMMMMh. hMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMy :NMMMMMMMMm`-MMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMM/ dMMMMMMMMMM/`MMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMM/ dMMMMMMMMMM/:MMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMmdh+ -++osyhmNMMomMMMMMMMMMMMMM
+MMMMMMMMMMMMsdMmy+-.`  `````   `./sdMMMMMMMMMMMMMM
+MMMMMMMMMMMMh`:` .:+shddmmmddhs/-` `:yNMMMMMMMMMMM
+MMMMMMMMMMmo.``:dNMMMMMMMMMMMMMMNmy/. .sNMMMMMMMMM
+MMMMMMMMNo`.+dh:mMMMMMMMMMMMMMMMMMMMmy: .hMMMMMMMM
+MMMMMMMh..sNMMMNdMMMMMMMMMMMMMMMMMMMMMNd/`oMMMMMMM
+MMMMMMo`+mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMd/sMMMMMM
+MMMMM+.hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMhNMMMMM
+MMMMNsNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                                                                                    
+#
+# DIOGENES OLIVEIRA DOS SANTOS JUNIOR
+# WWW.DIOGENESJUNIOR.COM.BR
+# CONTATO@DIOGENESJUNIOR.COM.BR
+#
+-->
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<title>Magic Tree</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+<meta name="theme-color" content="#0096cc">
+
+<!-- FAVICON -->
+<link rel="shortcut icon" href="images/logo.png">
+
+<!-- VIEWS -->
+<link type="text/css" rel="stylesheet" href="css/jsview.css"/>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css?v=2" media="all" />
+
+<link rel="stylesheet" type="text/css" href="css/style.css?v=A45" />
+
+<link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css">
+<!-- ICONES -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- ANIMATE -->
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+<!-- DROPDOWN -->
+<link href="css/bootstrap-dropdownhover.css" rel="stylesheet">
+
+<!-- MICRON -->
+<link href="css/micron.min.css" type="text/css" rel="stylesheet">
+
+<!-- GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+
+<!-- NOVO PLAYER DE AUDIO -->
+<link rel="stylesheet" type="text/css" href="//cdn.plyr.io/3.4.7/plyr.css">
+
+<link rel="icon" href="images/icones/128x128.png" type="image/png" />  
+<link rel="apple-touch-icon" href="images/icones/152x152.png">   
+<meta name="theme-color" content="white"/>  
+<meta name="apple-mobile-web-app-capable" content="yes">  
+<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+<meta name="apple-mobile-web-app-title" content="Hello World"> 
+<meta name="msapplication-TileImage" content="images/144.png">  
+<meta name="msapplication-TileColor" content="#FFFFFF">
+
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="hidden-sm hidden-xs">
+
+   <div class="container">
+     <div class="row2">
+
+        <!-- LOGO -->
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 logo">
+           <a href="javascript:void(0)" title="Magic Tree" onclick="$JSView.goToView('viewBooks'); loadBooks();">
+              <img src="images/logo.png" alt="Magic Tree Logo" />
+           </a>
+           <a href="javascript:void(0)" title="Desativar Audio / Disable Audio" class="disable-audio" onclick="reduceAllVolume()">
+             <img src="images/tocando.png" alt="Desativar Audio / Disable Audio">
+           </a>
+        </div>
+        <!-- LOGO -->
+
+
+        <!-- NAVEGAÇÃO -->
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 navegacao jp-stop">
+              <div class="menu-desktop hidden-sm hidden-xs">
+
+                       <a href="javascript:void(0)" id="menuBooks" class="menu-pai nao-ativo" onclick="loadBooks()" style="padding-top: 19px;">
+                          <img src="images/star.png" alt="Menu Ativo"> Books
+                       </a>
+
+                       <!--
+                       <a href="javascript:void(0)" id="menuGames" class="menu-pai nao-ativo" onclick="loadMemoryGame()">
+                         <img src="images/star.png" alt="Menu Ativo"> Games
+                       </a>
+                     -->
+                       
+                       
+                       
+                       <span class="dropdown dropdown-inline">
+                           <a href="javascript:void(0)" id="menuGames" class="dropdown-toggle menu-pai nao-ativo"  style="padding-top: 19px;" data-toggle="dropdown" data-hover="dropdown">
+                             <img src="images/star.png" alt="Menu Ativo"> Games </a>
+
+                          <ul class="dropdown-menu dropdownhover-bottom dropdown-menu-games" role="menu" id="listaLivrosGames">
+
+                            <li id="gamesMT1"><a href="javascript:void(0)" onclick="$JSView.goToView('viewGames'); ativarMenuGame(this);">Magic tree Level 01</a></li>
+                            <li id="gamesMT2"><a href="javascript:void(0)" onclick="$JSView.goToView('viewGames'); ativarMenuGame(this);">Magic tree Level 02</a></li>
+                            <li id="gamesMT3"><a href="javascript:void(0)" onclick="$JSView.goToView('viewGames'); ativarMenuGame(this);">Magic tree Level 03</a></li>
+
+                          </ul>
+                       </span>
+                     
+                       
+                       <!--
+                       <a href="javascript:void(0)" id="menuGames" class="menu-pai nao-ativo" onclick="$JSView.goToView('viewGames'); ativarMenuGame();">
+                         <img src="images/star.png" alt="Menu Ativo"> Games
+                       </a>
+                       -->
+
+                       <a href="javascript:void(0)" id="menuVideos" class="menu-pai nao-ativo"  style="padding-top: 19px;" onclick="$JSView.goToView('viewVideos'); ativarMenuVideos();">
+                         <img src="images/star.png" alt="Menu Ativo"> Videos
+                       </a>
+
+                       <a href="javascript:void(0)" id="menuSongs" class="menu-pai nao-ativo"  style="padding-top: 19px;" onclick="$JSView.goToView('viewSongs'); ativarMenuSongs(); inicializarMusicPlayer();">
+                         <img src="images/star.png" alt="Menu Ativo"> Songs
+                       </a>
+
+                       <span class="dropdown dropdown-inline" style="position: relative;float: right;">
+                           <a href="javascript:void(0)" class="dropdown-toggle menu-pai"  style="" data-toggle="dropdown" data-hover="dropdown">
+                              <span id="containerFotoPerfil"></span>
+                           </a>
+
+                           <ul class="dropdown-menu dropdownhover-bottom" role="menu">
+
+                            <li><a href="javascript:void(0)" onclick="ativarJsView('1020'); $JSView.goToView('viewManageAccount'); resetMenus(); carregarAccount();" title="Manage yout account">Manage account</a></li>
+                            <li><a href="javascript:void(0)" onclick="ativarJsView('812'); $JSView.goToView('viewAccessKey'); carregarUsuarioAccessKey(); resetMenus();" title="Access Key">Access Key</a></li>
+                            <li><a href="javascript:void(0)" onclick="ativarJsView('812'); $JSView.goToView('viewGetHelp'); resetMenus();" title="Get Help">Get help</a></li>
+                            <li><a href="javascript:void(0)" title="Sair" onclick="logoff()">Logoff</a></li>
+
+                           </ul>
+                           <div class="perfilActions">
+                              <img src="images/label.png" alt="Seu nível atual">
+                              <a href="javascript:void(0)" id="nivelAtualUsuario">0</a>
+
+                                  <!-- BARRA DE PROGRESSO -->
+                                  <div class="progress">
+                                    <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100" style="width: 100%">
+                                      <small>0 pontos</small>
+                                    </div>
+                                  </div>
+                                  <!-- BARRA DE PROGRESSO -->
+
+                           </div>
+                       </span>
+                       
+                       <!--
+                       <span class="dropdown dropdown-inline">
+                           <a href="javascript:void(0)" class="dropdown-toggle menu-pai" data-toggle="dropdown" data-hover="dropdown">EN <span class="caret"></span></a>
+
+                           <ul class="dropdown-menu dropdownhover-bottom dropdown-menu2" role="menu">
+
+                             <li><a href="#">Pt BR</a></li>
+
+                           </ul>
+                       </span>
+                     -->
+
+            </div>
+        </div>
+        <!-- NAVEGAÇÃO -->
+
+     </div>
+   </div>
+
+</header>
+<!-- HEADER -->
+
+<!-- HEADER MOBILE -->
+<header class="header-mobile  hidden-lg hidden-md">
+   
+     <!-- COLUNA -->
+     <div class="col-sm-3 col-xs-3 wow slideInLeft">
+        <a href="javascript:void(0)" id="menuBooksMobile" class="menu-pai nao-ativo" onclick="loadBooks()" style="padding-top: 19px;">
+           <img src="images/star.png" alt="Menu Ativo"> Books
+        </a>
+     </div>
+     <!-- COLUNA -->
+
+      <!-- COLUNA -->
+     <div class="col-sm-3 col-xs-3 wow slideInLeft" data-wow-delay="0.3s">
+        <!--<a href="javascript:void(0)" id="menuGamesMobile" class="menu-pai nao-ativo" onclick="loadBooks()" style="padding-top: 19px;">
+           <img src="images/star.png" alt="Menu Ativo"> Games
+        </a>-->
+                      <span class="dropdown dropdown-inline">
+                           <a href="javascript:void(0)" id="menuGamesMobile" class="dropdown-toggle menu-pai nao-ativo"  style="padding-top: 19px;" data-toggle="dropdown" data-hover="dropdown">
+                             <img src="images/star.png" alt="Menu Ativo"> Games </a>
+
+                          <ul class="dropdown-menu dropdownhover-bottom dropdown-menu-games" role="menu" id="listaLivrosGamesMobile">
+
+                            <li id="gamesMT1Mobile"><a href="javascript:void(0)" onclick="$JSView.goToView('viewGames'); ativarMenuGame(this);">Magic tree Level 01</a></li>
+                            <li id="gamesMT2Mobile"><a href="javascript:void(0)" onclick="$JSView.goToView('viewGames'); ativarMenuGame(this);">Magic tree Level 02</a></li>
+                            <li id="gamesMT3Mobile"><a href="javascript:void(0)" onclick="$JSView.goToView('viewGames'); ativarMenuGame(this);">Magic tree Level 03</a></li>
+
+                          </ul>
+                       </span>
+     </div>
+     <!-- COLUNA -->
+
+      <!-- COLUNA -->
+     <div class="col-sm-3 col-xs-3 wow slideInLeft" data-wow-delay="0.6s">
+        <a href="javascript:void(0)" id="menuVideosMobile" class="menu-pai nao-ativo" onclick="$JSView.goToView('viewVideos'); ativarMenuVideos();" style="padding-top: 19px;">
+           <img src="images/star.png" alt="Menu Ativo"> Videos
+        </a>
+     </div>
+     <!-- COLUNA -->
+
+      <!-- COLUNA -->
+     <div class="col-sm-3 col-xs-3 wow slideInLeft" data-wow-delay="0.9s">
+        <a href="javascript:void(0)" id="menuSongsMobile" class="menu-pai nao-ativo" onclick="$JSView.goToView('viewSongs'); ativarMenuSongs(); inicializarMusicPlayer();" style="padding-top: 19px;">
+           <img src="images/star.png" alt="Menu Ativo"> Songs
+        </a>
+     </div>
+     <!-- COLUNA -->
+
+</header>
+<!-- HEADER MOBILE -->
+
+<!-- HEADER MOBILE ON TOP -->
+<header class="mobile-on-top hidden-lg hidden-md">
+  
+        <!-- LOGO -->
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 logo">
+           <a href="javascript:void(0)" title="Magic Tree" onclick="location.reload();">
+              <img src="images/logo.png" alt="Magic Tree Logo" />
+           </a>
+           <a href="javascript:void(0)" title="Desativar Audio / Disable Audio" class="disable-audio" onclick="reduceAllVolume()">
+             <img src="images/tocando.png" alt="Desativar Audio / Disable Audio">
+           </a>
+        </div>
+        <!-- LOGO -->
+
+        <!-- MANAGE -->
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                           <div class="perfilActions">
+                              <img src="images/label.png" alt="Seu nível atual">
+                              <a href="javascript:void(0)" id="nivelAtualUsuarioMobile">0</a>
+
+                                  <!-- BARRA DE PROGRESSO -->
+                                  <div class="progress">
+                                    <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100" style="width: 100%">
+                                      <small>0 pontos</small>
+                                    </div>
+                                  </div>
+                                  <!-- BARRA DE PROGRESSO -->
+
+                           </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+
+                       <span class="dropdown dropdown-inline" style="position: relative;float: right;margin-right: -12px;">
+                           <a href="javascript:void(0)" class="dropdown-toggle menu-pai"  style="" data-toggle="dropdown" data-hover="dropdown">
+                              <span id="containerFotoPerfilMobile"></span>
+                           </a>
+
+                           <ul class="dropdown-menu dropdownhover-bottom" role="menu">
+
+                            <li><a href="javascript:void(0)" onclick="ativarJsView('1020'); $JSView.goToView('viewManageAccount'); resetMenus(); carregarAccount();" title="Manage yout account">Manage account</a></li>
+                            <li><a href="javascript:void(0)" onclick="ativarJsView('812'); $JSView.goToView('viewAccessKey'); carregarUsuarioAccessKey(); resetMenus();" title="Access Key">Access Key</a></li>
+                            <li><a href="javascript:void(0)" onclick="ativarJsView('812'); $JSView.goToView('viewGetHelp'); resetMenus();" title="Get Help">Get help</a></li>
+                            <li><a href="javascript:void(0)" title="Sair" onclick="logoff()">Logoff</a></li>
+
+                           </ul>
+                           
+                       </span>
+          
+        </div>
+        <!-- MANAGE -->
+
+
+</header>
+<!-- HEADER MOBILE ON TOP -->
+
+
+<!-- WORK -->
+<div class="work pagina-01">
+
+  <div class="container tada">
+   <div class="row2">
+      <div class="col-lg-8 col-md-8 col-lg-off-set-2 col-md-offset-2 col-sm-12 col-xs-12 text-center">
+
+        <p class="logo animated infinite pulse delay-2s">
+           <img src="images/logo-grande.png" alt="Magic Tree" class="pop" />
+        </p>
+        <h1>Welcome!</h1>
+
+        <p>
+          Obrigado por acessar nossa plataforma on-line, agora você terá acesso a todo conteúdo digital do Magic tree! /
+          <span style="color: #C2C2C2;">thank you for accessing our online platform, you will now have access to all of Magic tree's digital content.</span> 
+        </p>
+        <p>
+          <a href="javascript:void(0)" onclick="loadBooks()" class="btn btn-primary btn-lg">BOOKS</a>
+        </p>
+
+      </div>
+   </div>
+  </div>
+
+
+      <!-- DIV DO CARREGAMENTO DAS VIEWS -->
+      <div class="container caixa-conteudo">
+           &nbsp;
+      </div>
+      <!-- DIV DO CARREGAMENTO DAS VIEWS -->
+
+</div>
+<!-- WORK -->
+
+
+<!-- RODAPE -->
+<footer>
+
+    <div class="footer-bottom hidden-sm hidden-xs">
+       <div class="container">
+         <div class="row2">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+             <p>Editora Baltimore - Todos os direitos reservados</p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-right">
+             <p>atendimento@baltimoreeducation.com.br</p>
+          </div>
+         </div>
+       </div>
+    </div>
+
+</footer>
+<!-- RODAPE -->
+
+<!-- AUDIOS -->
+<audio id="sound1" src="sounds/musica-corrente.mp3" loop type="audio/mp3"></audio>
+<audio id="sound2" src="sounds/desbloqueio.mp3" type="audio/mp3"></audio>
+
+<!-- AUDIOS DO MEMORY GAME -->
+<audio id="sound3" src="sounds/goodjob.mp3" type="audio/mp3"></audio> <!-- ACERTO -->
+<audio id="sound4" src="sounds/try_again.mp3" type="audio/mp3"></audio> <!-- ERRO -->
+<audio id="sound5" src="sounds/memory_game.mp3" type="audio/mp3"></audio> <!-- MUSICA DE FUNDO -->
+<audio id="sound6" src="sounds/woohoo.mp3" type="audio/mp3"></audio> <!-- FINALIZOU COM SUCESSO -->
+<audio id="sound7" src="sounds/sucesso.mp3" type="audio/mp3"></audio> <!-- FINALIZOU COM SUCESSO -->
+
+<!-- AUDIOS DO MATHING GAME -->
+<audio id="sound8" src="sounds/mathing1.mp3" type="audio/mp3"></audio> <!-- QUADRO 1 -->
+<audio id="sound9" src="sounds/mathing2.mp3" type="audio/mp3"></audio> <!-- QUADRO 2 -->
+<audio id="sound10" src="sounds/mathing3.mp3" type="audio/mp3"></audio> <!-- QUADRO 3 -->
+<audio id="sound11" src="sounds/mathing4.mp3" type="audio/mp3"></audio> <!-- QUADRO 4 -->
+
+<audio id="sound12" src="sounds/gameover.mp3" type="audio/mp3"></audio> <!-- GAME OVER -->
+<audio id="soundTracks" type="audio/mp3"></audio> <!-- TRACKS (AUDIOS DOS PDF'S INTERNOS) -->
+
+<!-- ESSE SERÁ O PLAYER DEFINITIVO -->
+<audio id="playerOficial" src="" autobuffer preload type="audio/mp3"></audio>
+
+<iframe src="sounds/ta-da.mp3" allow="autoplay" id="audio"></iframe>
+<!-- AUDIOS -->
+
+<!--  CARREGANDO -->
+<div class="carregando">
+
+<div class="loader loader--style2" title="1"> <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"> <path fill="#000" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z"> <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"/> </path> </svg> </div><p style="text-align: center;">processando</p>
+
+</div>
+<!--  CARREGANDO -->
+
+<!-- AJUSTE A ORIENTAÇÃO DO SEU DEVICE -->
+<div class="ajuste-orientacao-tablet">
+  <div class="animated infinite pulse delay-2s" style="animation-iteration-count: infinite !important;">
+      <div class='titanic titanic-rotate-phone'></div>
+      <p>Ajuste a orientação do<br>seu dispositivo</p>
+  </div>
+</div>
+<!-- AJUSTE A ORIENTAÇÃO DO SEU DEVICE -->
+
+
+
+<!-- GAME VITÓRIA GAME -->
+<div class="game-vitoria-game">
+
+   <p class="animated infinite pulse">
+     <img src="images/welldone.png" alt="Well Done" />
+   </p>
+
+   <div class="close-game-vitoria">
+     <a href="javascript:void(0)" onclick="$JSView.goToView('viewGames'); $('.game-vitoria-game').hide(); desligarAllMusicas(); atualizarNivel();" title="Fechar">
+       <img src="images/close.png" alt="Fechar">
+     </a>
+   </div>
+
+</div>
+<!-- GAME VITÓRIA GAME -->
+
+<!-- GAME DERROTA GAME -->
+<div class="game-derrota-game">
+
+   <p class="animated infinite pulse">
+     <img src="images/try-againd.png" alt="Try Again" />
+   </p>
+
+   <div class="close-game-vitoria">
+     <a href="javascript:void(0)" onclick="$JSView.goToView('viewGames'); $('.game-derrota-game').hide(); desligarAllMusicas(); atualizarNivel();" title="Fechar">
+       <img src="images/close.png" alt="Fechar">
+     </a>
+   </div>
+
+</div>
+<!-- GAME DERROTA GAME -->
+
+
+<!-- ALERTAS -->
+<div class="alertas-usuarios">
+
+   <div class="janela">
+     <h3></h3>
+     <p>
+       <a href="javascript:void(0)" onclick="$('.alertas-usuarios').fadeOut(500);" class="btn btn-primary">Ok, entendi</a>
+     </p>
+   </div>
+
+</div>
+<!-- ALERTAS -->
+
+<!-- AREA IFRAME VÍDEO -->
+<div class="area-iframe-video">
+
+	<div class="container">
+		<div class="col-lg-10 col-md-10 col-lg-off-set-1 col-md-offset-1 col-sm-12 col-xs-12" id="areaIframeVideo">
+			<p>carregando...</p>
+		</div>
+	</div>
+
+	<div class="close-video">
+     <a href="javascript:void(0)" onclick="fecharVideos();" title="Fechar">
+       <img src="images/close.png" alt="Fechar">
+     </a>
+   </div>
+	
+</div>
+<!-- AREA IFRAME VÍDEO -->
+
+
+<!-- AREA IFRAME UPLOAD FOTO PERFIL USUÁRIO -->
+<div class="area-iframe-upload">
+
+  <div class="container">
+    <div class="col-lg-6 col-md-6 col-lg-off-set-3 col-md-offset-3 col-sm-12 col-xs-12" id="areaIframeUpload">
+      <iframe src="" id="iframeUpload" style="width: 100%;height: 300px;border-radius: 20px;overflow: hidden !important;border: none !important;"></iframe>
+    </div>
+  </div>
+
+  <div class="close-upload">
+     <a href="javascript:void(0)" onclick="fecharIframeUpload();" title="Fechar">
+       <img src="images/close.png" alt="Fechar">
+     </a>
+   </div>
+  
+</div>
+<!-- AREA IFRAME UPLOAD FOTO PERFIL USUÁRIO -->
+
+
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script> <!-- TOUCH SWIP PARA O SLIDE PRINCIPAL -->
+    <script type="text/javascript" src="js/scripts.js?v=A93"></script>
+    <script type="text/javascript" src="js/sweetalert2.min.js"></script>
+    <script src="js/micron.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+
+    <script type="text/javascript">
+
+      // VERIFICAR SE O USUÁRIO ESTÁ LOGADO
+      verificarSessao();
+
+      // VERIFICAR SERIAIS
+      verificarSeriaisAcesso();
+   
+      // CARREGAR TODO O CONTEÚDO
+      carregarConteudo();
+
+    </script>
+
+    <script>
+         new WOW().init();
+         micron.getEle(".tada").interaction("tada").duration(".55").timing("ease-out");
+         setTimeout('playMusicBackground("#sound1")', 1750);
+    </script>
+
+    <!-- ICONES ANIMADOS -->
+    <script src="https://cdn.rawgit.com/icons8/titanic/master/dist/js/titanic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.5.9/bodymovin.min.js"></script>
+
+    <script type="text/javascript">
+      var titanic = new Titanic({
+          hover: true, // auto animated on hover (default true)
+          click: true  // auto animated on click/tap (default false)
+        });
+
+
+    </script>
+
+    <!-- VIEWS -->
+    <script type="text/javascript">
+      // PAGINA PRINCIPAL DAS VIEWS
+      var paginaSessao = "welcome.html";
+    </script>
+
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="js/jsview.js?v=2"></script>
+    <script type="text/javascript" src="js/controllers.js?v=2"></script>
+    <script type="text/javascript" src="js/app-views.js?v=2"></script>
+
+    <!-- PDF EMBED -->
+    <script src="js/pdf.js"></script>
+
+    <!-- JPLAYER 
+    <script type="text/javascript" src="js/jquery.jplayer.min.js"></script> -->
+
+    <!-- NOVO PLAYER DE AUDIO -->
+    <script type="text/javascript" src="js/html5media.min.js"></script>
+    <script type="text/javascript" src="js/plyr.min.js"></script>
+
+    <script src="js/signature_pad.umd.js"></script>
+
+    <script src="js/dist/jquery.inputmask.bundle.js"></script>
+    <script src="js/dist/inputmask/phone-codes/phone.js"></script>
+    
+
+    <!-- DROPDOWN HOVER -->
+    <script src="js/bootstrap-dropdownhover.js"></script>
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</body>
+</html>

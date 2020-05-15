@@ -1,0 +1,452 @@
+
+<jsv-content>
+
+            <!-- PAGE CONTENT FIM -->
+            <div class="page-content">
+
+							<div class="titulo-view">
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 data-arrow">
+                   <a href="javascript:void(0)" onclick="$JSView.goToView('viewBooksUnits'); loadUnidadesLivro(localStorage.getItem('idLivro'),localStorage.getItem('tipoLivro'));">
+                     <img src="images/down-arrow.png" alt="Voltar">
+                   </a>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-6 col-xs-9 text-right no-mobile-sem-padding-top">
+                    <h1 id="nomeUnidade"></h1>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs">&nbsp;</div>
+                <br clear="both" />
+							</div>
+
+              <br clear="both" />    
+
+							<!-- AREA DE EDIÇÃO -->
+              <div class="lista-loop">
+
+                   <!-- TOOLBAR MOBILE -->
+                   <div class="toolbar toolbar-mobile hidden-lg hidden-md">
+
+
+
+                         <!-- MUSIC -->
+                         <div class="drop-toolbar">
+                            <!--<a href="javascript:void(0)">
+                              <img src="images/toolbar1.png" alt="">
+                            </a>-->
+                            <span class="dropdown dropdown-inline">
+                               <a href="javascript:void(0)" class="dropdown-toggle menu-pai" data-toggle="dropdown" data-hover="dropdown">
+                                  <img src="images/toolbar-mobile-1.png" alt=""> 
+                               </a>
+
+                               <ul class="dropdown-menu dropdownhover-left dropdown-menu2" role="menu" id="toolbarTracksMobile"></ul>
+                           </span>
+                         </div>
+                         <!-- FINAL MUSIC -->
+
+
+
+                      
+                        <!-- VIDEOS -->
+                        <div class="drop-toolbar">
+                            <!--<a href="javascript:void(0)">
+                              <img src="images/toolbar1.png" alt="">
+                            </a>-->
+                            <span class="dropdown dropdown-inline">
+                               <a href="javascript:void(0)" class="dropdown-toggle menu-pai" data-toggle="dropdown" data-hover="dropdown">
+                                  <img src="images/toolbar-mobile-2.png" alt=""> 
+                               </a>
+
+                               <ul class="dropdown-menu dropdownhover-left dropdown-menu2" role="menu" id="toolbarVideoMobile"></ul>
+                           </span>
+                         </div>
+                         <!-- FINAL VÍDEOS -->
+
+
+                         
+                        
+                         
+                         <!-- SOUNDS 
+                         <div class="drop-toolbar">
+                           
+                            <span class="dropdown dropdown-inline">
+                               <a href="javascript:void(0)" class="dropdown-toggle menu-pai" data-toggle="dropdown" data-hover="dropdown">
+                                  <img src="images/toolbar3.png" alt=""> 
+                               </a>
+
+                               <ul class="dropdown-menu dropdownhover-left dropdown-menu2" role="menu">
+
+                                 <li><a href="javascript:void(0)">Sound 1</a></li>
+                                 <li><a href="javascript:void(0)">Sound 2</a></li>
+                                 <li><a href="javascript:void(0)">Sound 3</a></li>
+                                 <li><a href="javascript:void(0)">Sound 4</a></li>
+
+                               </ul>
+                           </span>
+                         </div>
+                         FINAL SOUNDS -->
+                         
+                         <!-- GAMES --> 
+                         <div class="drop-toolbar">
+                            <!--<a href="javascript:void(0)">
+                              <img src="images/toolbar1.png" alt="">
+                            </a>-->
+                            <span class="dropdown dropdown-inline">
+                               <a id="gamesUnidadesMobile" href="javascript:void(0)" class="menu-pai" onclick="$JSView.goToView('viewGames'); ativarMenuGame(this);">
+                                  <img src="images/toolbar-mobile-3.png" alt=""> 
+                               </a>
+
+                               <!--<ul class="dropdown-menu dropdownhover-left dropdown-menu2" role="menu">
+
+                                 <li><a href="javascript:void(0)">Memory Game</a></li>
+                                 <li><a href="javascript:void(0)">Mathing Game</a></li>
+                                 <li><a href="javascript:void(0)">Drag and Drop</a></li>
+
+                               </ul>-->
+                           </span>
+                         </div>
+                       <!-- DRAW -->
+                                          <div class="drop-toolbar">
+                                                  <!--<a href="javascript:void(0)">
+                                                    <img src="images/toolbar1.png" alt="">
+                                                  </a>-->
+                                                  <span class="dropdown dropdown-inline">
+                                                     <a href="javascript:void(0)" class="dropdown-toggle menu-pai" data-toggle="dropdown" data-hover="dropdown" onclick="createDraw();">
+                                                        <img src="images/toolbar-mobile-draw.png" alt=""> 
+                                                     </a>
+
+                                                     <ul class="dropdown-menu dropdownhover-left dropdown-menu2 dropdown-menu-mudar-cor" role="menu" style="background: #c2c2c2 !important;">
+
+                                                       <li>
+                                                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 cores-to-draw">
+                                                           <a href="javascript:void(0)" onclick="mudarCor('#fff');"><span class="cor1">&nbsp;</span></a>
+                                                         </div>
+                                                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 cores-to-draw">
+                                                           <a href="javascript:void(0)" onclick="mudarCor('#3E3E3E');"><span class="cor2">&nbsp;</span></a>
+                                                         </div>
+                                                       </li>
+
+                                                       <li>
+                                                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 cores-to-draw">
+                                                           <a href="javascript:void(0)" onclick="mudarCor('#973158');"><span class="cor3">&nbsp;</span></a>
+                                                         </div>
+                                                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 cores-to-draw">
+                                                           <a href="javascript:void(0)" onclick="mudarCor('#E07C3D');"><span class="cor4">&nbsp;</span></a>
+                                                         </div>
+                                                       </li>
+
+                                                       <li>
+                                                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 cores-to-draw">
+                                                           <a href="javascript:void(0)" onclick="mudarCor('#0A7A8E');"><span class="cor5">&nbsp;</span></a>
+                                                         </div>
+                                                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 cores-to-draw">
+                                                           <a href="javascript:void(0)" onclick="mudarCor('#649B4C');"><span class="cor6">&nbsp;</span></a>
+                                                         </div>
+                                                       </li>
+
+                                                     </ul>
+                                                 </span>
+                                           </div>
+                                          <!-- FINAL DRAW -->
+
+
+
+
+                                          <!-- ERASE -->
+                                           <div class="drop-toolbar">
+                                           <p>
+                                              <a href="javascript:void(0)" onclick="destroyDraw();">
+                                                <img src="images/toolbar-mobile-erase.png" alt="">
+                                              </a>
+                                           </p>
+                                           </div>
+                                           <!-- ERASE -->
+
+                                           
+
+                                           <!-- FAVORITAR -->
+                                           <div class="drop-toolbar">
+                                           <p id="professorFavoritarToolbarMobile">
+                                              <a href="javascript:void(0)" onclick="professorFavoritar();">
+                                                <img src="images/professor-favoritar.png" id="imgFavoritarPagina" alt="" style="width:18px;">
+                                              </a>
+                                           </p>
+                                           </div>
+                                           <!-- FAVORITAR -->
+
+                                           
+
+
+                                           <!-- ADICIONAR NOTA -->
+                                           <div class="drop-toolbar">
+                                           <p id="professorAddNotaToolbarMobile">
+                                              <a href="javascript:void(0)" onclick="professorAddNota();">
+                                                <img src="images/professor-nota.png" alt="" style="width: 27px;margin-right: -5px;">
+                                              </a>
+                                           </p>
+                                            </div>
+                                           <!-- ADICIONAR NOTA --> 
+
+                   </div>
+                   <!-- TOOLBAR MOBILE -->
+
+
+
+
+                   <!-- TOOLBAR 1 -->
+                   <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 toolbar toolbar-1 hidden-sm hidden-xs">
+                         
+                         <!-- VIDEOS -->
+                         <div class="drop-toolbar">
+                            <!--<a href="javascript:void(0)">
+                              <img src="images/toolbar1.png" alt="">
+                            </a>-->
+                            <span class="dropdown dropdown-inline">
+                               <a href="javascript:void(0)" class="dropdown-toggle menu-pai" data-toggle="dropdown" data-hover="dropdown">
+                                  <img src="images/toolbar1.png" alt=""> 
+                               </a>
+
+                               <ul class="dropdown-menu dropdownhover-left dropdown-menu2" role="menu" id="toolbarVideo"></ul>
+                           </span>
+                         </div>
+                         <!-- FINAL VÍDEOS -->
+
+
+                         
+                         <!-- MUSIC -->
+                         <div class="drop-toolbar">
+                            <!--<a href="javascript:void(0)">
+                              <img src="images/toolbar1.png" alt="">
+                            </a>-->
+                            <span class="dropdown dropdown-inline">
+                               <a href="javascript:void(0)" class="dropdown-toggle menu-pai" data-toggle="dropdown" data-hover="dropdown">
+                                  <img src="images/track2.svg" alt=""> 
+                               </a>
+
+                               <ul class="dropdown-menu dropdownhover-left dropdown-menu2" role="menu" id="toolbarTracks"></ul>
+                           </span>
+                         </div>
+                         <!-- FINAL MUSIC -->
+                         
+                         <!-- SOUNDS 
+                         <div class="drop-toolbar">
+                           
+                            <span class="dropdown dropdown-inline">
+                               <a href="javascript:void(0)" class="dropdown-toggle menu-pai" data-toggle="dropdown" data-hover="dropdown">
+                                  <img src="images/toolbar3.png" alt=""> 
+                               </a>
+
+                               <ul class="dropdown-menu dropdownhover-left dropdown-menu2" role="menu">
+
+                                 <li><a href="javascript:void(0)">Sound 1</a></li>
+                                 <li><a href="javascript:void(0)">Sound 2</a></li>
+                                 <li><a href="javascript:void(0)">Sound 3</a></li>
+                                 <li><a href="javascript:void(0)">Sound 4</a></li>
+
+                               </ul>
+                           </span>
+                         </div>
+                         FINAL SOUNDS -->
+                         
+                         <!-- GAMES --> 
+                         <div class="drop-toolbar">
+                            <!--<a href="javascript:void(0)">
+                              <img src="images/toolbar1.png" alt="">
+                            </a>-->
+                            <span class="dropdown dropdown-inline">
+                               <a id="gamesUnidades" href="javascript:void(0)" class="menu-pai" onclick="$JSView.goToView('viewGames'); ativarMenuGame(this);">
+                                  <img src="images/toolbar4.png" alt=""> 
+                               </a>
+
+                               <!--<ul class="dropdown-menu dropdownhover-left dropdown-menu2" role="menu">
+
+                                 <li><a href="javascript:void(0)">Memory Game</a></li>
+                                 <li><a href="javascript:void(0)">Mathing Game</a></li>
+                                 <li><a href="javascript:void(0)">Drag and Drop</a></li>
+
+                               </ul>-->
+                           </span>
+                         </div>
+
+                   </div>
+                   <!-- TOOLBAR 1 -->
+
+                  <!-- AREA PDF -->
+                  <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 areaPdf">
+
+                         <!-- ASSINATURA -->
+                         <div id="signature-pad" class="signature-pad"></div> 
+                         <!-- ASSINATURA -->
+
+                      <!--<img src="" alt="" id="paginaAtiva">-->
+                      
+                        <!-- CAROUSEL -->
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">                          
+
+                              <!-- Wrapper for slides -->
+                              <div class="carousel-inner" role="listbox" id="aquiCarregamosImagens">
+                              </div>
+                          
+                        </div>
+
+                        <!-- CAROUSEL -->
+                        
+                        <!-- CONTROLES -->
+                        <div class="row2">
+                          
+
+                          <!-- COLUNA 1 MOBILE -->
+                          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-3 visible-xs">
+                            <p class="controles-img" style="text-align: center;">                          
+                              <a class="" href="#carousel-example-generic" role="button" data-slide="prev" onclick="destroyDraw();">
+                                <img src="images/paginas-esquerda.png">
+                              </a>                             
+                            </p>
+                          </div>
+                          <!-- COLUNA 1 MOBILE -->
+
+                                  <!-- COLUNA 1 -->
+                                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-6 link-similar-book">
+                                    <a href="javascript:void(0)" onclick="carregarActivityBook();">activity book</a>
+                                  </div>
+                                  <!-- COLUNA 1 -->
+
+                                  <!-- COLUNA 2 -->
+                                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 hidden-xs">
+                                    <p class="controles-img" style="text-align: center;">                          
+                                      <a class="" href="#carousel-example-generic" role="button" data-slide="prev" onclick="destroyDraw();">
+                                        <img src="images/paginas-esquerda.png">
+                                      </a>
+                                      <a class="" href="#carousel-example-generic" role="button" data-slide="next" onclick="destroyDraw();">
+                                        <img src="images/paginas-direita.png">
+                                      </a>
+                                    </p>
+                                  </div>
+                                  <!-- COLUNA 2 -->
+
+                                  <div class="col-lg-4 col-md-4 col-sm-12 hidden-xs">
+                                    <p style="text-align: right;font-size: 11.5px;padding-top: 11px;">use preferencialmente em modo tela cheia para acionar as funções</p>
+                                  </div>
+
+                          <!-- COLUNA 3 MOBILE -->
+                          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-3 visible-xs">
+                            <p class="controles-img" style="text-align: right;">                          
+                              <a class="" href="#carousel-example-generic" role="button" data-slide="next" onclick="destroyDraw();">
+                                <img src="images/paginas-direita.png">
+                              </a>
+                            </p>
+                          </div>
+                          <!-- COLUNA 3 MOBILE  -->
+
+                        </div>
+                        <!-- CONTROLES -->
+
+
+                  </div>
+                  <!-- AREA PDF -->
+
+                   <!-- TOOLBAR 2 -->
+                   <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 toolbar toolbar-2  hidden-sm hidden-xs">
+                     
+                    
+
+                    <!-- DRAW -->
+                    <div class="drop-toolbar">
+                            <!--<a href="javascript:void(0)">
+                              <img src="images/toolbar1.png" alt="">
+                            </a>-->
+                            <span class="dropdown dropdown-inline">
+                               <a href="javascript:void(0)" class="dropdown-toggle menu-pai" data-toggle="dropdown" data-hover="dropdown" onclick="createDraw();">
+                                  <img src="images/toolbar5.png" alt=""> 
+                               </a>
+
+                               <ul class="dropdown-menu dropdownhover-left dropdown-menu2 dropdown-menu-mudar-cor" role="menu" style="background: #c2c2c2 !important;">
+
+                                 <li>
+                                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 cores-to-draw">
+                                     <a href="javascript:void(0)" onclick="mudarCor('#fff');"><span class="cor1">&nbsp;</span></a>
+                                   </div>
+                                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 cores-to-draw">
+                                     <a href="javascript:void(0)" onclick="mudarCor('#3E3E3E');"><span class="cor2">&nbsp;</span></a>
+                                   </div>
+                                 </li>
+
+                                 <li>
+                                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 cores-to-draw">
+                                     <a href="javascript:void(0)" onclick="mudarCor('#973158');"><span class="cor3">&nbsp;</span></a>
+                                   </div>
+                                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 cores-to-draw">
+                                     <a href="javascript:void(0)" onclick="mudarCor('#E07C3D');"><span class="cor4">&nbsp;</span></a>
+                                   </div>
+                                 </li>
+
+                                 <li>
+                                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 cores-to-draw">
+                                     <a href="javascript:void(0)" onclick="mudarCor('#0A7A8E');"><span class="cor5">&nbsp;</span></a>
+                                   </div>
+                                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 cores-to-draw">
+                                     <a href="javascript:void(0)" onclick="mudarCor('#649B4C');"><span class="cor6">&nbsp;</span></a>
+                                   </div>
+                                 </li>
+
+                               </ul>
+                           </span>
+                     </div>
+                    <!-- FINAL DRAW -->
+
+
+                     
+                     <!-- ERASE -->
+                     <p>
+                        <a href="javascript:void(0)" onclick="destroyDraw();">
+                          <img src="images/toolbar6.png" alt="">
+                        </a>
+                     </p>
+                     <!-- ERASE -->
+
+                     <!-- FAVORITAR -->
+                     <p id="professorFavoritarToolbar">
+                        <a href="javascript:void(0)" onclick="professorFavoritar();">
+                          <img src="images/professor-favoritar.png" id="imgFavoritarPagina2" alt="" style="width:18px;">
+                        </a>
+                     </p>
+                     <!-- FAVORITAR -->
+
+
+                     <!-- ADICIONAR NOTA -->
+                     <p id="professorAddNotaToolbar">
+                        <a href="javascript:void(0)" onclick="professorAddNota();">
+                          <img src="images/professor-nota.png" alt="" style="width: 27px;margin-right: -5px;">
+                        </a>
+                     </p>
+                     <!-- ADICIONAR NOTA -->
+
+                     
+                     <!-- FECHAR 
+                     <p>
+                        <a href="javascript:void(0)">
+                          <img src="images/toolbar7.png" alt="">
+                        </a>
+                     </p>
+                   -->
+
+                   </div>
+                   <!-- TOOLBAR 2 -->
+
+
+              </div>
+              <!-- AREA DE EDIÇÃO -->
+
+
+
+              <br clear="both">
+              <br clear="both">
+              <br clear="both">
+              <br clear="both">
+              <br clear="both">
+
+
+            </div>
+            <!-- PAGE CONTENT FIM -->
+
+            <p class="visible-xs" style="text-align: center;font-size: 13px;">use preferencialmente em modo tela cheia para acionar as funções</p>
+
+</jsv-content>

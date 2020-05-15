@@ -1,0 +1,83 @@
+
+<jsv-content>
+
+            <!-- PAGE CONTENT FIM -->
+            <div class="page-content">
+
+							<div class="titulo-view">
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 data-arrow">
+                   <a href="javascript:void(0)" onclick="$JSView.goToView('viewGames'); desligarAllMusicas();">
+                     <img src="images/down-arrow.png" alt="Voltar">
+                   </a>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6 text-center">
+                    <h1 class="mobile-ajuste-margin">Drag and Drop<br><small></small></h1>
+                    <p id="instrucaoDragAndDropMobile"></p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">&nbsp;</div>
+                <br clear="both" />
+							</div>
+
+              <br clear="both" />
+
+							<!-- AREA DE EDIÇÃO -->
+              <div class="drag-and-drop">
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                   
+                    
+                  <div class="holder">
+                   
+                    <div id="bin">
+                      <img alt="Arraste os itens para cá" src="images/mochila-draganddrop.png" id="dragAndDropEsquerda" />
+                    </div>
+
+                    <ul id="listaElementosDragAndDrop">
+                    
+                      <li>
+                        <a draggable="true" href="javascript:void(0);" id="dragAndrDrop1" ondragstart="playMusic(musicaForMathing1); dragAndDropErrado = 'acerto';"><img src="images/m1.png" /></a>
+                      </li>
+                      
+                      <li>
+                        <a draggable="true" href="javascript:void(0);" id="dragAndrDrop2" ondragstart="playMusic(musicaForMathing2); dragAndDropErrado = 'acerto';"><img src="images/m2.png" /></a>
+                      </li>
+                      
+                      <li>
+                        <a draggable="true" href="javascript:void(0);" id="dragAndrDrop3" ondragstart="playMusic(musicaForMathing3); dragAndDropErrado = 'acerto';"><img src="images/m3.png" /></a>
+                      </li>
+                      
+                      <li>
+                        <a draggable="false" href="javascript:void(0);" id="dragAndrDrop4" ondragstart="playMusic(musicaForMathing4); dragAndDropErrado = 'errado';"><img src="images/m5.png" /></a>
+                      </li>
+                    
+                    </ul>
+
+
+                  </div>
+
+
+
+
+
+                </div>
+                <br clear="both">
+               
+                <div class="row2">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                    <p id="instrucaoDragAndDrop"></p>
+                  </div>
+                </div>
+
+              </div>
+              <!-- AREA DE EDIÇÃO -->
+
+              <br clear="both">
+              <br clear="both">
+              <br clear="both">
+              <br clear="both">
+              <br clear="both">
+
+
+            </div>
+            <!-- PAGE CONTENT FIM -->
+
+</jsv-content>
