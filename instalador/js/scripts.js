@@ -10,7 +10,7 @@ window.onload = () => {
 
 
 var urlApi         = "https://baltimoreeducation.com.br/api/";
-var urlCnd         = "arquivos/";
+var urlCnd         = "https://baltimoreeducation.com.br/admin/arquivos/";
 var urlDom         = "https://baltimoreeducation.com.br/";
 
 //var urlApi         = "http://127.0.0.1/baltimore/public_html/site/api/";
@@ -934,6 +934,9 @@ function loadUnidadesLivro(idLivro,tipoLivro,codigoLivro){
 
   localStorage.setItem("idLivro",idLivro);
   localStorage.setItem("tipoLivro",tipoLivro);
+
+  // FECHAR AUDIO PLAYER
+  fecharPlayerAudioLivros();
   
   console.log("%c INICIANDO FUNÇÃO PARA CARREGAR UNIDADES DO LIVRO: "+idLivro,"background:#3f16c4;color:#fff;");
   console.log("%c TIPO DO LIVRO: "+tipoLivro,"background:#3f16c4;color:#fff;");
@@ -1127,7 +1130,7 @@ function loadPaginasLivro(idLivro,idUnidade,tipoLivro){
                                     numTrack = s + 1;
                                     temTrack = 1;
 
-                                    if(dados.sounds[s].pagina!="geral" && dados.sounds[s].tipo==setarLivroAberto){
+                                    if(dados.sounds[s]){
                                     
                                         $("#toolbarTracks").append('<li><a href="javascript:void(0)" style="text-transform:lowercase;" title="Clique para ouvir o track" onclick="carregarTrack(\''+s+'\');">'+dados.sounds[s].nome+'</a></li>');
                                         $("#toolbarTracksMobile").append('<li><a href="javascript:void(0)" style="text-transform:lowercase;" title="Clique para ouvir o track" onclick="carregarTrackMobile(\''+s+'\');">'+dados.sounds[s].nome+'</a></li>');
@@ -1229,7 +1232,7 @@ function loadPaginasLivro(idLivro,idUnidade,tipoLivro){
                                     numTrack = s + 1;
                                     temTrack = 1;
 
-                                    if(dados.sounds[s].pagina!="geral" && dados.sounds[s].tipo==setarLivroAberto){
+                                    if(dados.sounds[s]){
                                     
                                         $("#toolbarTracks").append('<li><a href="javascript:void(0)" style="text-transform:lowercase;" title="Clique para ouvir o track" onclick="carregarTrack(\''+s+'\');">'+dados.sounds[s].nome+'</a></li>');
                                         $("#toolbarTracksMobile").append('<li><a href="javascript:void(0)" style="text-transform:lowercase;" title="Clique para ouvir o track" onclick="carregarTrack(\''+s+'\');">'+dados.sounds[s].nome+'</a></li>');
@@ -1384,7 +1387,7 @@ function carregarActivityBook(){
                                  for(var s = 0;s<dados.sounds.length;s++){
                                     numTrack = s + 1;
                                     temTrack = 1;
-                                    if(dados.sounds[s].pagina!="geral" && dados.sounds[s].tipo==setarLivroAberto){
+                                    if(dados.sounds[s]){
                                         $("#toolbarTracks").append('<li><a href="javascript:void(0)" style="text-transform:lowercase;" title="Clique para ouvir o track" onclick="carregarTrack(\''+s+'\');">'+dados.sounds[s].nome+'</a></li>');
                                         $("#toolbarTracksMobile").append('<li><a href="javascript:void(0)" style="text-transform:lowercase;" title="Clique para ouvir o track" onclick="carregarTrackMobile(\''+s+'\');">'+dados.sounds[s].nome+'</a></li>');
                                         localStorage.setItem("track_bd"+s,dados.sounds[s].link);  
@@ -1476,7 +1479,7 @@ function carregarStudentyBook(){
                                  for(var s = 0;s<dados.sounds.length;s++){
                                     numTrack = s + 1;
                                     temTrack = 1;
-                                    if(dados.sounds[s].pagina!="geral" && dados.sounds[s].tipo==setarLivroAberto){
+                                    if(dados.sounds[s]){
                                         $("#toolbarTracks").append('<li><a href="javascript:void(0)" style="text-transform:lowercase;" title="Clique para ouvir o track" onclick="carregarTrack(\''+s+'\');">'+dados.sounds[s].nome+'</a></li>');
                                         $("#toolbarTracksMobile").append('<li><a href="javascript:void(0)" style="text-transform:lowercase;" title="Clique para ouvir o track" onclick="carregarTrackMobile(\''+s+'\');">'+dados.sounds[s].nome+'</a></li>');
                                         localStorage.setItem("track_bd"+s,dados.sounds[s].link);  
