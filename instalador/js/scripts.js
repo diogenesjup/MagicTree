@@ -1239,6 +1239,9 @@ function loadPaginasLivro(idLivro,idUnidade,tipoLivro){
                                         
                                         localStorage.setItem("track_bd"+s,dados.sounds[s].link);  
 
+                                        listaPlayer.push({'icon': 'http://funkyimg.com/i/21pX5.png', 'title': dados.sounds[s].nome, 'file': urlCnd+dados.sounds[s].link});
+
+
                                      }
 
                                  }  
@@ -1247,6 +1250,13 @@ function loadPaginasLivro(idLivro,idUnidade,tipoLivro){
                                      $("#toolbarTracks").html("<li style='text-align:center;'><a href='javascript:void(0)' title='Nenhum track nessa unidade'>Nenhum<br> track<br> nessa<br> unidade</a><li>");
                                      $("#toolbarTracksMobile").html("<li style='text-align:center;'><a href='javascript:void(0)' title='Nenhum track nessa unidade'>Nenhum<br> track<br> nessa<br> unidade</a><li>");
                                    
+                                   }else{
+
+
+                                     
+                                     // INICIAR O PLAYER
+                                     iniciarPlayerAudiosLivros(listaPlayer);
+
                                    }
 
                               // ###########  POPULAR TRACKS FIM  ########### 
